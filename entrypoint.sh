@@ -2,8 +2,8 @@
 
 set -e
 
-echo "Change directory to Source"
-cd $SOURCE_DIR
+echo "Change directory to ${GITHUB_WORKSPACE}"
+cd $GITHUB_WORKSPACE
 
 echo "Get the properties"
 scene_version=`npm pkg get gsaas.version`
