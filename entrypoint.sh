@@ -4,6 +4,7 @@ set -e
 
 echo "Change directory to ${GITHUB_WORKSPACE}"
 cd $GITHUB_WORKSPACE
+ls
 
 echo "Get the properties"
 scene_version=`npm pkg get gsaas.version`
